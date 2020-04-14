@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1 id="title">Create an Account</h1>
+    <p id="description">Enter some information so we can enhance the quality of homeBass for you!</p>
+    <form id="survery-form">
+        <label for="full-name">Full name:</label><br>
+        <input type="text" id="full-name" name="full-name"><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="age">Age (optional):</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="who">What best described who you are?</label>
+        <p>Note: If more than once applies you will be able to add another role later</p>
+        <select id="who">
+            <option value="who-musician">Musician</option><br>
+            <option value="who-artist">Graphic Artist</option><br>
+            <option value="who-producer">Producer</option><br>
+        </select><br>
+        <label for="interest">What best describes what you are seeking?</label>
+        <select id="interest">
+            <option value="band">To join a band</option>
+            <option value="musician">A musician to join my current band</option>
+            <option value="jam">A group of musicians to jam with</option>
+            <option value="artist">A graphic artist to collaborate with</option>
+            <option value="musician-art">A musician/band in search of artwork</option>
+            <option value="producer">A producer to help me record</option>
+            <option value="musician-record">A musician/band who needs a place to record</option>
+            <option value="musician-rehearse">A musician/band who needs a place to rehearse</option>
+            <option value="space">A place for me and my band to rehearse</option>
+            <option value="studio">A place to record</option>
+        </select><br>
+        <label for="has-space">Do you have a rehearsal space</label><br>
+        <input type="radio" id="yes-space" name="has-space" value="yes-space">
+        <label for="yes-space">Yes</label><br>
+        <input type="radio" id="no-space" name="has-space" value="no-space">
+        <label for="no-space">No</label><br>
+        <input type="radio" id="na-space" name="has-space" value="na-space">
+        <label for="na-space">Prefer not to say</label><br>
+
+        <label for="has-studio">Do you have a recording studio?</label><br>
+        <input type="radio" id="yes-studio" name="has-studio" value="yes-studio">
+        <label for="yes-studio">Yes</label><br>
+        <input type="radio" id="no-studio" name="has-studio" value="no-studio">
+        <label for="no-studio">No</label><br>
+        <input type="radio" id="na-studio" name="has-studio" value="na-studio">
+        <label for="na-studio">Prefer not to say</label><br>
+
+        <button type="submit">Submit</button>
+        
+    </form>
+    
+</body>
+</html>
