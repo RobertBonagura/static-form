@@ -1,0 +1,74 @@
+/** Colors:
+    Tan                 #d5b794
+    Dark Khaki          #ba8954
+    Dark Olive Green    #442e26
+    Sienna              #7e5233
+    Light Steel Blue    #e9ebf0
+*/
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5b794;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#description {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#survery-form {
+    background-color: aliceblue;
+    width: 75%;
+    min-width: 370px;
+    max-width: 500px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.note {
+    font-size: small;
+    margin-top: 3px;
+}   
+
+label, legend {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 7px;  
+}
+
+legend {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+select {
+    position: relative;
+    margin-left: 2px;
+    margin-bottom: 30px;
+}
+
+.checkbox, .space, .studio {
+    display: inline;
+    flex-basis: 10%;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    flex-basis: 10%;
+    margin-left: 15px;
+}

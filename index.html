@@ -3,71 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>HomeBass - Create An Account Signup Page</title>
 </head>
 <body>
-    <h1 id="title">Create an Account</h1>
-    <p id="description">Enter some information so we can enhance the quality of homeBass for you!</p>
-    <form id="survery-form">
-        <label for="name" id="name-label">Full name:</label><br>
-        <input type="text" id="name" name="name" placeholder="John Doe"required><br>
-        <label for="email" id="email-label">E-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="yourEmail@email.com"required><br>
-        <label for="number" id="number-label">Age (optional):</label><br>
-        <input type="number" id="number" name="number" min="18" max="99" placeholder="Must be 18 to sign up"><br>
-        <legend>What best described who you are?
-            <p>Note: If more than once applies you will be able to add another role later</p>
-        </legend>
-        <select id="dropdown">
-            <option value="musician">Musician</option><br>
-            <option value="artist">Graphic Artist</option><br>
-            <option value="producer">Producer</option><br>
-        </select>
-        <legend>What best describes what you are seeking?</legend>
-        <select id="interest">
-            <option value="band">To join a band</option>
-            <option value="musician">A musician to join my current band</option>
-            <option value="jam">A group of musicians to jam with</option>
-            <option value="artist">A graphic artist to collaborate with</option>
-            <option value="musician-art">A musician/band in search of artwork</option>
-            <option value="producer">A producer to help me record</option>
-            <option value="record">A musician/band who needs a place to record</option>
-            <option value="rehearse">A musician/band who needs a place to rehearse</option>
-            <option value="space">A place for me and my band to rehearse</option>
-            <option value="studio">A place to record</option>
-        </select><br>
+    <div id="main">
+        <header id="header" class="flex-item">
+            <h1 id="title">Create an Account</h1>
+            <p id="description">Enter some information so we can enhance the quality of homeBass for you!</p>
+        </header>
+        <form id="survery-form" class="flex-item">
+            <label for="name" id="name-label">Full name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe"required><br>
+            <label for="email" id="email-label">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="yourEmail@email.com"required><br>
+            <label for="number" id="number-label">Age (optional):</label>
+            <input type="number" id="number" name="number" min="18" max="99" placeholder="Must be 18 to sign up"><br>
+            <legend>What best describes who you are?
+                <p class="note">Note: If more than one applies you will be able to add another role later</p>
+            </legend>
+            <select id="dropdown">
+                <option value="musician">Musician</option><br>
+                <option value="artist">Graphic Artist</option><br>
+                <option value="producer">Producer</option><br>
+            </select>
+            <legend>What best describes what you are seeking?</legend>
+            <select id="interest">
+                <option value="band">To join a band</option>
+                <option value="musician">A musician to join my current band</option>
+                <option value="jam">A group of musicians to jam with</option>
+                <option value="artist">A graphic artist to collaborate with</option>
+                <option value="musician-art">A musician/band in search of artwork</option>
+                <option value="producer">A producer to help me record</option>
+                <option value="record">A musician/band who needs a place to record</option>
+                <option value="rehearse">A musician/band who needs a place to rehearse</option>
+                <option value="space">A place for me and my band to rehearse</option>
+                <option value="studio">A place to record</option>
+            </select><br>
 
-        <legend>Which of the following pertain to you?</legend>
-        <input type="checkbox" id="instrument1" name="instrument1" value="Guitar">
-        <label for="instrument1"> I play Guitar</label><br>
-        <input type="checkbox" id="instrument2" name="instrument2" value="Bass">
-        <label for="instrument2"> I play Bass</label><br>
-        <input type="checkbox" id="instrument3" name="instrument3" value="Drums">
-        <label for="instrument3"> I play Drums</label><br>
-        <input type="checkbox" id="artist" name="artist" value="Artist">
-        <label for="artist"> I am a Graphic Artist</label><br>
-        <input type="checkbox" id="producer" name="producer" value="Producer">
-        <label for="producer"> I produce/record musicians</label><br>
+            <legend>Which of the following pertain to you?</legend>
+            <input type="checkbox" id="instrument1" name="instrument1" value="Guitar">
+            <label for="instrument1" class="checkbox"> I play Guitar</label><br>
+            <input type="checkbox" id="instrument2" name="instrument2" value="Bass">
+            <label for="instrument2" class="checkbox"> I play Bass</label><br>
+            <input type="checkbox" id="instrument3" name="instrument3" value="Drums">
+            <label for="instrument3" class="checkbox"> I play Drums</label><br>
+            <input type="checkbox" id="artist" name="artist" value="Artist">
+            <label for="artist" class="checkbox"> I am a Graphic Artist</label><br>
+            <input type="checkbox" id="producer" name="producer" value="Producer">
+            <label for="producer" class="checkbox"> I produce/record musicians</label><br>
 
-        <legend>Do you have a rehearsal space</legend>
-        <input type="radio" id="yes-space" name="has-space" value="yes-space">
-        <label for="yes-space">Yes</label><br>
-        <input type="radio" id="no-space" name="has-space" value="no-space">
-        <label for="no-space">No</label><br>
-        <input type="radio" id="na-space" name="has-space" value="na-space">
-        <label for="na-space">Prefer not to say</label><br>
+            <legend>Do you have a rehearsal space</legend>
+            <input type="radio" id="yes-space" name="has-space" value="yes-space">
+            <label for="yes-space" class="space">Yes</label><br>
+            <input type="radio" id="no-space" name="has-space" value="no-space">
+            <label for="no-space" class="space">No</label><br>
+            <input type="radio" id="na-space" name="has-space" value="na-space">
+            <label for="na-space" class="space">Prefer not to say</label><br>
 
-        <label for="has-studio">Do you have a recording studio?</label><br>
-        <input type="radio" id="yes-studio" name="has-studio" value="yes-studio">
-        <label for="yes-studio">Yes</label><br>
-        <input type="radio" id="no-studio" name="has-studio" value="no-studio">
-        <label for="no-studio">No</label><br>
-        <input type="radio" id="na-studio" name="has-studio" value="na-studio">
-        <label for="na-studio">Prefer not to say</label><br>
+            <legend>Do you have a recording studio?</legend>
+            <input type="radio" id="yes-studio" name="has-studio" value="yes-studio">
+            <label for="yes-studio" class="studio">Yes</label><br>
+            <input type="radio" id="no-studio" name="has-studio" value="no-studio">
+            <label for="no-studio" class="studio">No</label><br>
+            <input type="radio" id="na-studio" name="has-studio" value="na-studio">
+            <label for="na-studio" class="studio">Prefer not to say</label><br>
 
-        <button type="submit">Submit</button>
-        
-    </form>
-    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
