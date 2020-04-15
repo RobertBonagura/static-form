@@ -13,10 +13,22 @@
     background-color: #d5b794;
 }
 
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.form-item {
+    align-self: flex-start;
+}
+
 #header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 #description {
@@ -26,20 +38,21 @@
 }
 
 #survery-form {
-    background-color: aliceblue;
     width: 75%;
     min-width: 370px;
-    max-width: 500px;
+    max-width: 700px;
     margin:auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color:#7e5233;
+    color: #f4f7ff
 }
 
 .note {
     font-size: small;
     margin-top: 3px;
+    margin-bottom: -3px;
 }   
 
 label, legend {
@@ -49,26 +62,34 @@ label, legend {
 }
 
 legend {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 input {
     margin-bottom: 15px;
-    margin-left: 2px;
+    margin-left: 5px;
+    width: 92%;
 }
 
 select {
-    position: relative;
-    margin-left: 2px;
-    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-bottom: -10px;;
 }
 
 .checkbox, .space, .studio {
-    display: inline;
-    flex-basis: 10%;
+    position: relative;
+    left: 25px;
+    bottom: 11px;
 }
 
-input[type="checkbox"], input[type="radio"]{
-    flex-basis: 10%;
-    margin-left: 15px;
+button {
+    align-self: center;
+    margin: 30px 0px 20px;
 }
